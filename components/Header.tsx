@@ -4,7 +4,7 @@ import {FaBell, FaEnvelope} from 'react-icons/fa'
 import { usePathname} from 'next/navigation'
 const Header = () => {
     const path = usePathname();
-     
+
     return (
         <header className='my-5'>
             <section className='px-2 flex items-center justify-between text-white'>
@@ -14,17 +14,12 @@ const Header = () => {
             </div>
             <nav className='flex items-center justify-center'>
                 
-                <div className='flex items-center justify-between gap-3 px-3'>
-                    
-                    <div 
-                    className='block lg:hidden'
-                    >
-                        
+                <div className='flex items-center justify-between gap-3 px-3'>   
                     <span >
 
                         <Link href='/login'>Sign in</Link>
                     </span>
-                    </div>
+            
                     <span>
                         <FaBell/>
                     </span>
